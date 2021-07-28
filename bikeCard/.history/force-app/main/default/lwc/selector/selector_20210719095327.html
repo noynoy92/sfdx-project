@@ -1,0 +1,23 @@
+<template>
+    <div class="wrapper">
+    <header class="header">Select a Bike</header>
+    <p>{username}</p>
+    <section class="content">
+        <div class="columns">
+        <main class="main" >
+            <c-list onproductselected={handleProductSelected}></c-list>
+            <lightning-record-view-form record-id={userId} object-api-name="User">
+                <lightning-output-field field-name="Username">
+                    
+                </lightning-output-field>
+            </lightning-record-view-form>
+        </main>
+        <aside class="sidebar-second">
+            <c-detail product-id={userId}></c-detail>
+            
+        </aside>
+        
+        </div>
+    </section>
+    </div>
+</template>

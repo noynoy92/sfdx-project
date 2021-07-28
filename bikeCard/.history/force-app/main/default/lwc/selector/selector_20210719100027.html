@@ -1,0 +1,20 @@
+<template>
+    <div class="wrapper">
+    <header class="header">Select a Bike</header>
+    <p>{userData.data.Name}</p>
+    <section class="content">
+        <div class="columns">
+        <main class="main" >
+            <c-list onproductselected={handleProductSelected}></c-list>
+            
+        </main>
+        <aside class="sidebar-second">
+            <c-detail product-id={userId}></c-detail>
+            
+            
+        </aside>
+        
+        </div>
+    </section>
+    </div>
+</template>
